@@ -13,6 +13,7 @@ import io.whisperly.app.data.repository.GeminiRepository
 import io.whisperly.app.data.repository.AudioRepository
 import io.whisperly.app.data.repository.UserPreferencesRepository
 import io.whisperly.app.service.OverlayManager
+import io.whisperly.app.service.contract.ContextDelegate
 import javax.inject.Singleton
 
 /**
