@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Whisperly</string>
+    <string name="accessibility_service_description">Whisperly reads on-screen content to provide AI-powered assistance when you need it.</string>
+    
+    <!-- Onboarding strings -->
+    <string name="welcome_title">Welcome to Whisperly</string>
+    <string name="welcome_description">Your intelligent contextual assistant that helps enhance your conversations using AI.</string>
+    <string name="accessibility_permission_title">Screen Reading Permission</string>
+    <string name="accessibility_permission_description">Whisperly needs to see the screen content to provide contextual assistance.</string>
+    <string name="overlay_permission_title">Overlay Permission</string>
+    <string name="overlay_permission_description">Whisperly needs to display over other apps to be always available.</string>
+    <string name="api_key_title">Gemini API Key</string>
+    <string name="api_key_description">Enter your Google Gemini API key for AI processing. Your key is stored securely on your device.</string>
+    <string name="setup_complete_title">All Set!</string>
+    <string name="setup_complete_description">Whisperly is ready to assist you. Look for the floating icon when you need help.</string>
+    
+    <!-- Action strings -->
+    <string name="summarize">Summarize</string>
+    <string name="check_grammar">Check Grammar</string>
+    <string name="change_tone">Change Tone</string>
+    <string name="explain_simple">Explain Simply</string>
+    <string name="voice_command">Voice Command</string>
+    <string name="copy_response">Copy Response</string>
+    <string name="close_overlay">Close</string>
+    
+    <!-- Status strings -->
+    <string name="loading">Processing your request...</string>
+    <string name="tap_action_below">Tap an action below to get started</string>
+    <string name="response_copied">Response copied to clipboard</string>
+    <string name="error_no_api_key">Please set your Gemini API key in settings</string>
+    <string name="error_no_permission">Missing required permissions</string>
+    <string name="error_network">Network error. Please try again.</string>
+</resources> 
