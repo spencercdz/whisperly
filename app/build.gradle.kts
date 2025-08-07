@@ -93,6 +93,9 @@ dependencies {
     
     // Accessibility Service
     implementation("androidx.core:core:1.12.0")
+
+    // Materials
+    implementation("com.google.android.material:material:1.12.0")
     
     // Testing
     testImplementation("junit:junit:4.13.2")
@@ -104,7 +107,23 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
 
-// Allow references to generated code
 kapt {
+    // Allow references to generated code
     correctErrorTypes = true
-} 
+
+    // This directly injects the required JVM arguments into the Kapt process.
+    javacOptions {
+        // These arguments are for Java 9+ compatibility.
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.jvm=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED")
+        option("--add-opens=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED")
+    }
+}
